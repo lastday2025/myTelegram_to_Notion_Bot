@@ -17,7 +17,7 @@ import requests
 API_ID        = int(os.environ["TG_API_ID"])
 API_HASH      = os.environ["TG_API_HASH"]
 SESSION_STR   = os.environ["TG_SESSION"]          # generated once via gen_session.py
-CHANNEL       = os.environ["TG_CHANNEL"]          # e.g. "jobschannel" or "-1001234567890"
+CHANNEL       = int(os.environ["TG_CHANNEL"])          # e.g. "jobschannel" or "-1001234567890"
 NOTION_TOKEN  = os.environ["NOTION_TOKEN"]
 DATABASE_ID   = os.environ["NOTION_DATABASE_ID"]
 
